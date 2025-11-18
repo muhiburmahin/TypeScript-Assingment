@@ -16,7 +16,11 @@ Interface বারবার declare করলে merging হয়, মানে �
 Types একবার declare করলে পরে আর merge হয় না।
 
 Example
+
+
 Interface Example:
+
+
 
 interface User {
   name: string;
@@ -29,10 +33,14 @@ const person: User = {
   age: 22,
   id:202;
 };
+
+
+
 Type Alias Example:
 
-type Status = "success" | "error";
 
+
+type Status = "success" | "error";
 type Product = {
   title: string;
   price: number;
@@ -55,7 +63,11 @@ const laptop: Product = {
 মানে তুমি যাই করো, ভুল হলেও error দিবে না। এতে কোড risky হয়ে যায়।
 
 Example
+
+
 // any
+
+
 let data: any="hello";
 data=20;
 
@@ -65,6 +77,8 @@ unknown দেখতে any-এর মতো, কিন্তু অনেক sa
 
 
 // unknown
+
+
 let value: unknown = "test";
 if (typeof value === "string") {
   console.log(value.toUpperCase());
